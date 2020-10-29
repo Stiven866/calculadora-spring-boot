@@ -1,5 +1,7 @@
 package com.example.calculadora.test;
 
+import static org.junit.jupiter.api.Assertions.*;
+
 import org.junit.jupiter.api.Test;
 
 import com.example.calculadora.model.Dividir;
@@ -8,11 +10,8 @@ import com.example.calculadora.model.Multiplicar;
 import com.example.calculadora.model.Resta;
 import com.example.calculadora.model.Suma;
 
-import junit.framework.TestCase;
+class TestCalc {
 
-
-class TestCalculadora extends TestCase {
-	
 	private Suma sum = new Suma();
 	private Resta res = new Resta();
 	private Multiplicar mult = new Multiplicar();
@@ -74,7 +73,6 @@ class TestCalculadora extends TestCase {
 		mod.modulo(25,0);
 		assertEquals("Math Error", mod.getModulo());
 	}
-	
 	
 
 }
